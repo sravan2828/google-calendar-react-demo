@@ -1,0 +1,36 @@
+.header {
+	border-bottom: 1px solid #dadce0;
+	box-shadow: 0 1px 5px #eee;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+.logo {
+	font-weight: 400;
+	font-size: 1.4em;
+	color: rgba(0, 0, 0, .54);
+	margin: 0;
+	line-height: 60px;
+	background: url("./images/calender-icon.png") no-repeat left center;
+	background-size: 40px;
+	padding-left: 50px;
+}
+
+.avatar {
+	border-radius: 50%;
+	background: #ccc;
+	padding: 3px;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	flex-shrink: 0;
+}
+
+.avatar img {
+	max-width: 100%;
+}

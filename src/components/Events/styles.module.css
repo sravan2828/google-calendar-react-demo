@@ -1,0 +1,28 @@
+.events {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.event {
+	position: absolute;
+	background: #4285f4;
+	margin: 0;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	padding: 6px 10px;
+	overflow: hidden;
+	line-height: 1.25;
+	cursor: pointer;
+}
+.event i {
+	display: none;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	color: #eee;
+}
+
+.event:hover i {
+	display: block;
+}

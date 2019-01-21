@@ -1,0 +1,9 @@
+.week {
+	display: flex;
+	margin-top: 30px;
+	flex: 1;
+}
+
+.wrapper {
+	flex: 1;
+}
