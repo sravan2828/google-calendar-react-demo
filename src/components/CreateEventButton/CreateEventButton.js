@@ -1,27 +1,22 @@
-import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Fab from '@material-ui/core/Fab';
-import AddIcon from '@material-ui/icons/Add';
-import styles from './styles.module.css';
+import React from "react";
+import { styled } from "@mui/material/styles";
+import Fab from "@mui/material/Fab";
+import AddIcon from "@mui/icons-material/Add";
+import styles from "./styles.module.css";
 
-const classes = theme => ({
-	fab: {
-		margin: theme.spacing.unit
-	},
-	extendedIcon: {
-		marginRight: theme.spacing.unit
-	}
-});
+const StyledFab = styled(Fab)(({ theme }) => ({
+  margin: theme.spacing(1),
+}));
 
 function CreateEventButton(props) {
-	const { classes, onEventCreate } = props;
-	return (
-		<div className={styles.create}>
-			<Fab color="primary" aria-label="Add" className={classes.fab} onClick={onEventCreate}>
-				<AddIcon />
-			</Fab>
-		</div>
-	);
+  const { onEventCreate } = props;
+  return (
+    <div className={styles.create}>
+      <StyledFab color="primary" aria-label="Add" onClick={onEventCreate}>
+        <AddIcon />
+      </StyledFab>
+    </div>
+  );
 }
 
-export default withStyles(classes)(CreateEventButton);
+export default CreateEventButton;
